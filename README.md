@@ -4,17 +4,13 @@ Más que una arquitectura sólo son una serie de condiciones que se deben cumpli
 ![alt text](https://github.com/OscarGovea/Clean-Uncle-Bob/blob/master/clean_archi.png)
 
 
-- Entities
-Son aquellos objetos que van a representar los actores importantes de la lógica de negocio de nuestra aplicación.
+- Entities: Son aquellos objetos que van a representar los actores importantes de la lógica de negocio de nuestra aplicación.
 
-- Use Cases
-Están muy relacionados con las entidades y son los encargados de implementar lógica de negocio de nuestra aplicación, ya que van a orientar todas aquellas interacciones del flujo de datos y entidades dejando al framework fuera de todo esto (en nuestro caso el sdk android), también se conocen como interactores.
+- Use Cases: Están muy relacionados con las entidades y son los encargados de implementar lógica de negocio de nuestra aplicación, ya que van a orientar todas aquellas interacciones del flujo de datos y entidades dejando al framework fuera de todo esto (en nuestro caso el sdk android), también se conocen como interactores.
 
-- Interface Adapters
-Convierten los datos en el formato más conveniente para los casos de uso y entidades. (De manera recurrente aqui encontraras controladores y presentadores.)
+- Interface Adapters: Convierten los datos en el formato más conveniente para los casos de uso y entidades. (De manera recurrente aqui encontraras controladores y presentadores.)
 
-- Frameworks and Drivers
-Aquí es donde residen los detalles y todo ese conjunto de plataformas externas y herramientas como puede ser la UI, Web, DB , Devices, etc. Generalmente solo se deben comunicar con el siguiente círculo a su interior.
+- Frameworks and Drivers: Aquí es donde residen los detalles y todo ese conjunto de plataformas externas y herramientas como puede ser la UI, Web, DB , Devices, etc. Generalmente solo se deben comunicar con el siguiente círculo a su interior.
 
 ## Android Clean Architecture
 Este esquema es una representación de cómo se aplica el Clean Architecture en una aplicación android ya que gracias a la gran participación de muchos desarrolladores de la comunidad android alrededor del mundo se ha ido mejorando en estos últimos meses ya que se le han agregado dos componentes importantes el primero un patrón en la capa de presentación que puede ser MVP, MVVM, MVC o el que prefieras y el segundo se ha agregado el Repository Pattern en la capa de datos para abstraer el origen de datos y destacar que estos patrones no están dentro de la arquitectura que Uncle Bob describe, es trabajo de una comunidad con el único objetivo de mejorar el desarrollo de nuestras aplicaciones android y si estoy seguro que te encontraras diferentes implementaciones porque realmente no hay un camino a seguir pero particularmente es la que más me gusta y es la que se ha adaptado a mis problemas.
